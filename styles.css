@@ -1,0 +1,101 @@
+/* styles.css */
+body {
+    font-family: 'Impact', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.slot {
+    font-size: 60px;
+    margin: 0 10px;
+    padding: 20px;
+    border: 2px solid #444444;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    overflow: hidden;
+}
+
+.slot span {
+    display: block;
+    animation: spinAnimation 1s ease-out;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f88d00;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+.bank {
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    animation: blinkAnimation 5s infinite;
+}
+
+.spins {
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: red;
+}
+
+.jackpot {
+    animation: jackpotAnimation 2s ease-out;
+}
+
+@keyframes spinAnimation {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes jackpotAnimation {
+    0%, 100% { color: red; }
+    50% { color: gold; }
+}
+
+@keyframes blinkAnimation {
+    0% { color: #ff0000; }
+    25% { color: #00ff00; }
+    50% { color: #0000ff; }
+    75% { color: #ffff00; }
+    100% { color: #ff00ff; }
+}
