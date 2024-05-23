@@ -2,6 +2,8 @@
 
 This is a simple slot machine game built using HTML, CSS, and JavaScript. The game allows players to spin three slots with different emojis, and win or lose money based on the outcome.
 
+https://stathismorr.github.io/slot-machine-game/
+
 ## Game Rules
 
 1. **Initial Bank**: The player starts with a bank of €100,000.
